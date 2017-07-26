@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Menu escada for mobile</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+</head>
+
+<body>
+    <nav>
+        <button class="menu-mob" onclick="change(this)" id="menu">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</button>
+        <ul id="lista">
+            <li></li>
+            <li class="centralizado">
+                <input type="text" name="pesquisa" id="pesquisa-mob" placeholder="o que você quer saber?">
+                <label for="pesquisa-mob"><i class="fa fa-search texto-preto lupa" aria-hidden="true"></i></label></li>
+            <li class="laranja centralizado">menu</li>
+            <li class="azul centralizado">ladder</li>
+            <li class="vermelho centralizado">for</li>
+            <li class="preto centralizado">mobile</li>
+        </ul>
+    </nav>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script>
+    function change(x) {
+        x.classList.toggle("change");
+    }
+</script>
+
+</html>
